@@ -10,4 +10,6 @@ Route::post('/cadastrar',[ContatoController::class, 'storeContato'])->name('cada
 Route::get('/todoscontato',[ContatoController::class,'showGerenciador'])->name('todos-contato');
  
 Route::delete('/delete-contato/{id}',[ContatoController::class,'destroy'])->name('delete-contato');
-Route::put('/todoscontato/{id}',[ContatoController::class, 'update'])->name('alterar-contato');
+
+Route ::get('/alterar/{id}',[ContatoController::class,'show'])->name('alterar-contato');
+Route::put('/alterarBanco/{id}',[ContatoController::class, 'update'])->name('alterarBanco-contato');

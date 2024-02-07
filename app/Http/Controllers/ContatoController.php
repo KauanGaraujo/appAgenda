@@ -47,6 +47,6 @@ class ContatoController extends Controller
         return Redirect::route('todos-contato');
     }
     public function show(Contato $id){
-        return view('buscarTodos',['contatos'=>$id]);
+        return view('alterar',['contatos'=>$id]);
     }
 }
